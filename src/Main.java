@@ -1,23 +1,28 @@
-class Arac {
-    public void start() {
-        System.out.println("Araç çalışıyor");
+class Animal {
+
+    public void sesCikar() {
+        System.out.println("Hayvanlar ses çıkarıyor");
     }
 }
-
-class Araba extends Arac {
+class Kedi extends Animal {
     @Override
-    public void start() {
-        System.out.println("Araba kontağı çevirince çalıştı");
+    public void sesCikar () {
+        System.out.println("Miyav");
     }
 }
-
+class kopek extends Animal {
+    @Override
+    public void sesCikar() {
+        System.out.println("hav");
+    }
+}
 public class Main {
     public static void main(String[] args) {
-        Arac arac = new Arac();
-        arac.start();
 
-        Araba araba = new Araba();
-        araba.start();
+        Animal hayvan = new Kedi();
+        Animal hayvan1 = new kopek();
+        hayvan.sesCikar();
+        hayvan1.sesCikar();
     }
-}
 
+}
