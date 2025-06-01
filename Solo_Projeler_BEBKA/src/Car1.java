@@ -1,10 +1,10 @@
-public class Car {
+public class Car1 {
 
     String marka;
     String model;
     int yil;
 
-    public Car(String marka, String model, int yil) {
+    public Car1(String marka, String model, int yil) {
 
         this.marka = marka;
         this.model = model;
@@ -26,6 +26,9 @@ public class Car {
         araba.Cikti();
 
     }
+
+
+
 
 
 

@@ -1,35 +1,22 @@
 public class Car1 {
 
+    // Alanları (özellikleri) tanımla
     String marka;
     String model;
     int yil;
 
+    // Constructor (yapıcı metot)
     public Car1(String marka, String model, int yil) {
-
         this.marka = marka;
         this.model = model;
         this.yil = yil;
-        // this bir keyword parametre isimleri ile değişken isimleri çakıştığında kullanılır.
-
-    }
-    public void Cikti() {
-
-        System.out.println("Marka " + marka);
-        System.out.println("Model " + model);
-        System.out.println(" Yil " + yil);
-
-    }
-    public static void main (String[] args) {
-
-        Car araba = new Car("Nissan", "X-Trail", 2023);
-
-        araba.Cikti();
-
     }
 
-
-
-
-
-
+    // main metodu
+    public static void main(String[] args) {
+        Car1 araba = new Car1("Toyota", "Corolla", 2020);
+        System.out.println("Marka: " + araba.marka);
+    }
 }
+
+
